@@ -1,0 +1,15 @@
+{
+    "Variables": [
+        ["firefox", "firefox=vimperator"],
+        ["code", "code='Visual Studio Code'"],
+        ["windows", "(<firefox> | <code>)"]
+    ],
+    "Commands": [
+        ["open <windows>", "window.focus($1)"],
+        ["close window", "window.close()"],
+        ["start excel", "start('C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe')"]
+    ],
+    "Functions": [
+        ["repeat(word)", "$word"]
+    ]
+}

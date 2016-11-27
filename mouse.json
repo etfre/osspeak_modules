@@ -1,0 +1,14 @@
+{
+    "Variables": [
+    ],
+    "Commands": [
+        ["click", "mouse.click()"],
+        ["go there", "mouse.move(500)"],
+        ["mouse x", "mouse.x()"],
+        ["mouse y", "mouse.y()"],
+        ["do it", "foo(a)"]
+    ],
+    "Functions": [
+        ["foo(bar, baz=c)", "$bar $baz"]
+    ]
+}

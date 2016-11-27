@@ -1,0 +1,9 @@
+{
+    "Commands": [
+        ["snipe <optional_number>", "{back}_$1"],
+        ["escape <optional_number>", "{esc}_$1"],
+        ["delete <optional_number>", "{del}_$1"],
+        ["enter <optional_number>", "{enter}_$1"],
+        ["space <optional_number>", "{' '}_$1"]
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "Scope": "vscode",
+    "Conditions": {
+        "Title": "Visual Studio Code"
+    },
+    "Commands": [
+        ["fuzzy", "{ctrl+p}"]
+    ]
+}
