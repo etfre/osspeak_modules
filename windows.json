@@ -1,5 +1,5 @@
 {
-    "Variables": [
+    "Rules": [
         ["firefox", "firefox=vimperator"],
         ["code", "code='Visual Studio Code'"],
         ["windows", "(<firefox> | <code>)"]

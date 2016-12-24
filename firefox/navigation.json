@@ -3,7 +3,7 @@
     "Conditions": {
         "Title": "Vimperator"
     },
-    "Variables": [
+    "Rules": [
     ],
     "Commands": [
         ["link", "f"],
