@@ -1,9 +1,16 @@
 {
-    "Scope": "vscode",
-    "Conditions": {
-        "Title": "Visual Studio Code"
+    "functions": [],
+    "rules": [],
+    "conditions": {
+        "title": "Visual Studio Code"
     },
-    "Commands": [
-        ["fuzzy", "{ctrl+p}"]
-    ]
+    "commands": [
+        [
+            "fuzzy",
+            "{ctrl+p}"
+        ],
+        ["flip (north=up | south=down)", "{alt+$1}"],
+        ["choose word <optional_number>", "{ctrl+d}_$1"]
+    ],
+    "scope": "vscode"
 }

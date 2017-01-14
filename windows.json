@@ -1,15 +1,38 @@
 {
-    "Rules": [
-        ["firefox", "firefox=vimperator"],
-        ["code", "code='Visual Studio Code'"],
-        ["windows", "(<firefox> | <code>)"]
+    "functions": [
+        [
+            "repeat(word)",
+            "$word"
+        ]
     ],
-    "Commands": [
-        ["open <windows>", "window.focus($1)"],
-        ["close window", "window.close()"],
-        ["start excel", "start('C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe')"]
+    "rules": [
+        [
+            "firefox",
+            "firefox=vimperator"
+        ],
+        [
+            "code",
+            "code='Visual Studio Code'"
+        ],
+        [
+            "windows",
+            "(<firefox> | <code>)"
+        ]
     ],
-    "Functions": [
-        ["repeat(word)", "$word"]
-    ]
+    "conditions": {},
+    "commands": [
+        [
+            "open <windows>",
+            "window.focus($1)"
+        ],
+        [
+            "close window",
+            "window.close()"
+        ],
+        [
+            "start excel",
+            "start('C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe')"
+        ]
+    ],
+    "scope": ""
 }

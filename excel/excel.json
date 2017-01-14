@@ -1,0 +1,10 @@
+{
+
+    "scope": "excel",
+
+    "commands": [
+        ["activate excel", "extensions.run(excel.main)"],
+        ["message excel", "extensions.message(excel.main, whizbang)"]
+    ]
+
+}

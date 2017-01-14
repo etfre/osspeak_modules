@@ -1,11 +1,11 @@
 {
-    "Scope": "firefox",
-    "Conditions": {
-        "Title": "Vimperator"
+    "scope": "firefox",
+    "conditions": {
+        "title": "Vimperator"
     },
-    "Rules": [
+    "rules": [
     ],
-    "Commands": [
+    "commands": [
         ["link", "f"],
         ["go back", "H"],
         ["refresh", "{f5}"],
@@ -15,7 +15,7 @@
         ["go to something awful", "navigateTo(http://forums.somethingawful.com)"]
         
     ],
-    "Functions": [
+    "functions": [
         ["navigateTo(url)", "{ctrl+l}$url{enter}"]
     ]
 }
