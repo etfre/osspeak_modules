@@ -1,0 +1,14 @@
+{
+    "scope": "",
+    "rules": [],
+    "conditions": {
+        "state": "language == 'javascript'"
+    },
+    "commands": [
+        [
+            "new function",
+            "`function() { }`"
+        ]
+    ],
+    "functions": []
+}

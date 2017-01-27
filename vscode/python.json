@@ -1,0 +1,14 @@
+{
+    "scope": "",
+    "rules": [],
+    "conditions": {
+        "state": "language == 'python'"
+    },
+    "commands": [
+        [
+            "new function",
+            "`def ():` {left}_3"
+        ]
+    ],
+    "functions": []
+}

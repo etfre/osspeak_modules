@@ -1,0 +1,17 @@
+{
+    "functions": [
+        ["flystart()", "{ctrl+f1}"],
+        ["flyend()", "{ctrl+f2}"]
+    ],
+    "rules": [
+        ["clipboard", "(cut={ctrl+x} | copy={ctrl+c} | select={})"],
+        ["motion", "(until=t | after=f | before=F | retreat=T)"],
+        ["flydirection", "(north=w | west=a | south=s | east=d)"]
+    ],
+    "commands": [
+        ["<motion> <letter> <optional_number>", "flystart() $3 'f' $1$2 'c' flyend()"],
+        ["<flydirection> <optional_number>", "flystart() $2 'd' $1 'c' flyend()"],
+        ["<clipboard> <flydirection> <optional_number>", "flystart() $3 'd' $2 's' flyend() $1"]
+    ],
+    "scope": "vscode"
+}

@@ -1,7 +1,9 @@
 {
     "scope": "",
     "rules": [],
-    "conditions": {},
+    "conditions": {
+        
+    },
     "commands": [
         [
             "snipe <optional_number>",

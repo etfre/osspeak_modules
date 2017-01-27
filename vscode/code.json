@@ -1,16 +1,29 @@
 {
-    "functions": [],
-    "rules": [],
+    "functions": [
+        ["flyStart()", "{ctrl+f1}"],
+        ["flyEnd()", "{ctrl+f2}"]
+    ],
+    "rules": [
+        [
+            "direction",
+            "(north=up | east=right | south=down | west=left)"
+        ]
+    ],
     "conditions": {
         "title": "Visual Studio Code"
     },
     "commands": [
         [
+            "<direction> <digit>_0-",
+            "{$1}_$2"
+        ],
+        [
             "fuzzy",
             "{ctrl+p}"
         ],
         ["flip (north=up | south=down)", "{alt+$1}"],
-        ["choose word <optional_number>", "{ctrl+d}_$1"]
+        ["search <letter>", "{ctrl+f}$1{enter}"],
+        ["select word <optional_number>", "{ctrl+d}_$1"]
     ],
     "scope": "vscode"
 }
