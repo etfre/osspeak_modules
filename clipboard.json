@@ -9,7 +9,7 @@
             "<clip> that",
             "$1"
         ],
-        ["paste", "{ctrl+v}"]
+        ["paste <optional_number>", "{ctrl+v}_$1"]
     ],
     "functions": []
 }

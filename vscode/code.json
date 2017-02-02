@@ -21,9 +21,20 @@
             "fuzzy",
             "{ctrl+p}"
         ],
+        ["save", "{ctrl+s}"],
+        ["select line <optional_number>", "{ctrl+i}_$1"],
+        ["flip north <optional_number>", "{alt+up}_$1"],
+        ["flip south <optional_number>", "{alt+down}_$1"],
+        ["duplicate north <optional_number>", "{shift+alt+up}_$1"],
+        ["duplicate south <optional_number>", "{shift+alt+down}_$1"],
+        ["line <digit>_1-", "{ctrl+g}$1{enter}"],
+        ["undo <digit>_0-", "{ctrl+z}_$1"],
+        ["redo <digit>_0-", "{ctrl+y}_$1"],
+        ["smart grow <digit>_0-", "{shift+alt+right}_$1"],
+        ["smart shrink <digit>_0-", "{shift+alt+left}_$1"],
         ["flip (north=up | south=down)", "{alt+$1}"],
         ["search <letter>", "{ctrl+f}$1{enter}"],
-        ["select word <optional_number>", "{ctrl+d}_$1"]
+        ["multi cursor <optional_number>", "{ctrl+d}_$1"]
     ],
     "scope": "vscode"
 }
