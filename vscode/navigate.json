@@ -16,7 +16,8 @@
         ["<clipboard> <motion> <char> <optional_number>", "flystart() $-1 'f' $2$-2 's' flyend() $1"],
         ["<flydirection> <optional_number>", "flystart() $2 'd' $1 'c' flyend()"],
         ["<clipboard> <flydirection> <optional_number>", "flystart() $3 'd' $2 's' flyend() $1"],
-        ["<operator>", "spaceAround($1)"]
+        ["<operator>", "spaceAround($1)"],
+        ["short <operator> <optional_number>", "$1_$2"]
     ],
     "scope": "vscode"
 }
