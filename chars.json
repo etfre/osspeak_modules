@@ -40,7 +40,7 @@
             "foob"
         ],
         [
-            "(<letter> | <operator> | <other_char>) <digit>_0-",
+            "(<letter> | <other_char>) <digit>_0-",
             "$-2_$-1"
         ],
         [
