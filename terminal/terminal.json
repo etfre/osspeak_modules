@@ -1,0 +1,21 @@
+{
+    "functions": [
+    ],
+    "rules": [
+    ],
+    "conditions": {
+        "title": "Terminal of Evan"
+    },
+    "commands": [
+        [
+            "climb",
+            "'cd ..'{enter}"
+        ],
+        [
+            "display files",
+            "'ls | cat -n'{enter}"
+        ],
+        ["drop <digit>_1-", "extensions.run(terminal.drop) extensions.run(terminal.drop, $1)"]
+    ],
+    "scope": ""
+}
