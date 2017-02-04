@@ -15,7 +15,7 @@
             "display files",
             "'ls | cat -n'{enter}"
         ],
-        ["drop <digit>_1-", "extensions.run(terminal.drop) extensions.run(terminal.drop, $1)"]
+        ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal) extensions.message(osspeak_modules.terminal.terminal, $1)"]
     ],
     "scope": ""
 }
