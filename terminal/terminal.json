@@ -8,14 +8,18 @@
     },
     "commands": [
         [
-            "climb",
-            "'cd ..'{enter}"
+            "climb <optional_number>",
+            "'cd ' '../'_$1 {enter}"
         ],
         [
             "display files",
             "'ls | cat -n'{enter}"
         ],
-        ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal) extensions.message(osspeak_modules.terminal.terminal, $1)"]
+        ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal) extensions.message(osspeak_modules.terminal.terminal, $1)"],
+        ["tab (left=pageup | right=pagedown) <optional_number>", "{ctrl+$1}_$2"],
+        ["new tab", "{ctrl+shift+t}"],
+        ["make dir", "'mkdir '"]
+        
     ],
     "scope": ""
 }
