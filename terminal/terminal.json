@@ -18,7 +18,8 @@
         ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal) extensions.message(osspeak_modules.terminal.terminal, $1)"],
         ["tab (left=pageup | right=pagedown) <optional_number>", "{ctrl+$1}_$2"],
         ["new tab", "{ctrl+shift+t}"],
-        ["make dir", "'mkdir '"]
+        ["make dir", "'mkdir '"],
+        ["open directory", "'code .'{enter}"]
         
     ],
     "scope": ""

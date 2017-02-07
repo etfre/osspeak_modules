@@ -34,7 +34,8 @@
             "start excel",
             "start('C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe')"
         ],
-        ["start terminal", "{ctrl+alt+t}"]
+        ["start terminal", "{ctrl+alt+t}"],
+        ["start code", "shell(code)"]
     ],
     "scope": ""
 }
