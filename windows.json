@@ -7,8 +7,8 @@
     ],
     "rules": [
         [
-            "firefox",
-            "firefox=vimperator"
+            "chrome",
+            "chrome='Google Chrome'"
         ],
         [
             "code",
@@ -17,7 +17,7 @@
         ["terminal", "terminal='Terminal of Evan'"],
         [
             "windows",
-            "(<firefox> | <code> | <terminal>)"
+            "(<chrome> | <code> | <terminal>)"
         ]
     ],
     "conditions": {},
@@ -30,12 +30,14 @@
             "close window",
             "window.close()"
         ],
+        ["maximize window", "{f11}"],
         [
             "start excel",
             "start('C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe')"
         ],
         ["start terminal", "{ctrl+alt+t}"],
-        ["start code", "shell(code)"]
+        ["start code", "shell(code)"],
+        ["start chrome", "shell('google-chrome &')"]        
     ],
     "scope": ""
 }

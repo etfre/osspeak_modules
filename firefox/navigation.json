@@ -1,7 +1,7 @@
 {
-    "scope": "firefox",
+    "scope": "chrome",
     "conditions": {
-        "title": "Vimperator"
+        "title": "Google Chrome"
     },
     "rules": [
     ],

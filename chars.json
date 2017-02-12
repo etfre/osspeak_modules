@@ -14,7 +14,7 @@
         ],
         [
             "other_char",
-            "(comma=',' | lpar='(' | rpar=')' | space=' ' | flat='_' | double=\" | single=`'` lace='{' | race='}' | lack='[' | rack=']')"
+            "(comma=',' | lpar='(' | rpar=')' | space=' ' | flat='_' | double=\" | single=`'` lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\')"
         ],
         [
             "optional_number",

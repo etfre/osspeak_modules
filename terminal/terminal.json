@@ -12,14 +12,19 @@
             "'cd ' '../'_$1 {enter}"
         ],
         [
-            "display files",
+            "list files",
             "'ls | cat -n'{enter}"
         ],
         ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal) extensions.message(osspeak_modules.terminal.terminal, $1)"],
         ["tab (left=pageup | right=pagedown) <optional_number>", "{ctrl+$1}_$2"],
         ["new tab", "{ctrl+shift+t}"],
+        ["close tab", "{ctrl+shift+w}"],
         ["make dir", "'mkdir '"],
-        ["open directory", "'code .'{enter}"]
+        ["open directory", "'code .'{enter}"],
+        ["remove directory", "'rm -rf '"],
+        ["remove file", "'rm  '"],
+        ["touch", "'touch '"],
+        ["touch git ignore", "'touch .gitignore'{enter}"]
         
     ],
     "scope": ""

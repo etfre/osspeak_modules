@@ -34,6 +34,8 @@
         ["smart shrink <digit>_0-", "{shift+alt+left}_$1"],
         ["flip (north=up | south=down)", "{alt+$1}"],
         ["search <letter>", "{ctrl+f}$1{enter}"],
+        ["indent <optional_number>", "{ctrl+']'}_$1"],
+        ["outdent <optional_number>", "{ctrl+'['}_$1"],
         ["multi cursor <optional_number>", "{ctrl+d}_$1"]
     ],
     "scope": "vscode"
