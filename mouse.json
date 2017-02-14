@@ -1,9 +1,5 @@
 {
     "functions": [
-        [
-            "foo(bar, baz=c)",
-            "$bar $baz"
-        ]
     ],
     "rules": [],
     "conditions": {},
@@ -23,10 +19,6 @@
         [
             "mouse y",
             "mouse.y()"
-        ],
-        [
-            "do it",
-            "foo(a)"
         ]
     ],
     "scope": ""

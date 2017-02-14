@@ -1,5 +1,5 @@
 {
-    "scope": "",
+    "scope": "vscode",
     "rules": [],
     "conditions": {
         "state": "language == 'python'"
@@ -8,7 +8,10 @@
         [
             "new function",
             "`def ():` {left}_3"
-        ]
+        ],
+        ["import", "import spaceForward()"],
+        ["for iterable", "`for  in `clipboard.get(): {left}_length(clipboard.get()) {left}_5"],
+        ["for enumerate", "`for i,  in enumerate(` clipboard.get() `):` {left}_length(clipboard.get()) {left}_16"]
     ],
     "functions": []
 }

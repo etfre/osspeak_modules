@@ -36,6 +36,8 @@
         ["search <letter>", "{ctrl+f}$1{enter}"],
         ["indent <optional_number>", "{ctrl+']'}_$1"],
         ["outdent <optional_number>", "{ctrl+'['}_$1"],
+        ["new line", "{ctrl+enter}"],
+        ["new line above", "{ctrl+shift+enter}"],
         ["multi cursor <optional_number>", "{ctrl+d}_$1"]
     ],
     "scope": "vscode"
