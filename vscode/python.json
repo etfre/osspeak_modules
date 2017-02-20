@@ -9,7 +9,17 @@
             "new function",
             "`def ():` {left}_3"
         ],
-        ["import", "import spaceForward()"],
+        ["py import", "import spaceForward()"],
+        ["py return", "return spaceForward()"],
+        ["py class", "'class :'{left}"],
+        ["py yield", "yield spaceForward()"],
+        ["py continue", "continue"],
+        ["py break", "break"],
+        ["true", "True"],
+        ["false", "False"],
+        ["py if", "`if :` {left}"], 
+        ["py else if", "`elif :` {left}"], 
+        ["py else", "`else:` {enter}"], 
         ["for iterable", "`for  in `clipboard.get(): {left}_length(clipboard.get()) {left}_5"],
         ["for enumerate", "`for i,  in enumerate(` clipboard.get() `):` {left}_length(clipboard.get()) {left}_16"]
     ],

@@ -1,0 +1,12 @@
+{
+    "scope": "",
+    "rules": [],
+    "conditions": {
+        "title": "Visual Studio Code"
+    },
+    "commands": [
+        ["parentheses", "`()`"],
+        ["open recent", "{ctrl+r}"]
+    ],
+    "functions": []
+}

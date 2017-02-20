@@ -14,7 +14,7 @@
         ],
         [
             "other_char",
-            "(comma=',' | lpar='(' | rpar=')' | space=' ' | flat='_' | double=\" | single=`'` lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\')"
+            "(comma=',' | lpar='(' | rpar=')' | space=' ' | flat='_' | double=\" | single=`'` | lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\')"
         ],
         [
             "optional_number",
@@ -32,7 +32,7 @@
     "scope": "",
     "commands": [
         [
-            "<arrow> <digit>_0-",
+            "<arrow> <optional_number>",
             "{$1}_$2"
         ],
         [
@@ -40,8 +40,12 @@
             "foob"
         ],
         [
-            "(<letter> | <other_char>) <digit>_0-",
+            "(<letter> | <other_char>) <optional_number>",
             "$-2_$-1"
+        ],
+        [
+            "grow <letter> <optional_number>",
+            "upper($-2_$-1)"
         ],
         [
             "number <digit>_1-",
