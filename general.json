@@ -1,0 +1,12 @@
+{
+    "scope": "",
+    "rules": [],
+    "conditions": {
+    },
+    "commands": [
+        ["reload command modules", "osspeak.reload()"]
+    ],
+    "functions": [
+        ["navigateTo(url)", "{ctrl+l}$url{enter}"]
+    ]
+}

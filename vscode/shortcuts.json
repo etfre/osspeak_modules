@@ -6,7 +6,11 @@
     },
     "commands": [
         ["parentheses", "`()`"],
-        ["open recent", "{ctrl+r}"]
+        ["open recent", "{ctrl+r}"],
+        ["tab left <optional_number>", "{ctrl+pageup}_$1"],
+        ["tab right <optional_number>", "{ctrl+pagedown}_$1"],
+        ["close tab <optional_number>", "{ctrl+w}_$1"],
+        ["toggle comment", "{ctrl+'/'}"]
     ],
     "functions": []
 }

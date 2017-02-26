@@ -1,6 +1,9 @@
 {
-    "scope": "",
-    "rules": [],
+    "scope": "vscode",
+    "rules": [
+        ["jsExport", "export=(spaceBack() export)"],
+        ["jsKeyword", "(<jsExport>)"]
+    ],
     "conditions": {
         "state": "language == 'javascript'"
     },
@@ -8,6 +11,10 @@
         [
             "new function",
             "`function() { }`"
+        ],
+        [
+            "js <jsKeyword>",
+            "$1"
         ]
     ],
     "functions": []

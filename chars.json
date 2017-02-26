@@ -14,7 +14,7 @@
         ],
         [
             "other_char",
-            "(comma=',' | lpar='(' | rpar=')' | space=' ' | flat='_' | double=\" | single=`'` | lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\')"
+            "(comma=',' | lapping='(' | rapping=')' | space=' ' | flat='_' | double=\" | single=`'` | lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\' | semicolon=';' | colon=':')"
         ],
         [
             "optional_number",
@@ -22,7 +22,7 @@
         ],
         [
             "letter",
-            "(alpha=a| bravo=b | charlie=c | delta=d | elephant=e | foxtrot=f | golf=g | hotel=h | india=i | juliet=j | kilo=k | lima=l | mike=m | november=n | oscar=o | papa=p | quebec=q | romeo=r | sierra=s | tango=t | uniform=u | victor=v | whiskey=w | xray=x | yankee=y | zulu=z)"
+            "(alpha=a| bravo=b | charlie=c | delta=d | elephant=e | foxtrot=f | golf=g | hotel=h | india=i | juliet=j | kilo=k | lima=l | michael=m | november=n | oscar=o | papa=p | quebec=q | romeo=r | sierra=s | tango=t | uniform=u | victor=v | whiskey=w | xray=x | yankee=y | zulu=z)"
         ],
         [
             "char",

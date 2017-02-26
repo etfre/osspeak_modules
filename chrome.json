@@ -1,19 +1,23 @@
 {
     "scope": "chrome",
+    "rules": [],
     "conditions": {
-        "title": "Vimperator"
+        "title": "Google Chrome"
     },
-    "rules": [
-    ],
     "commands": [
-        ["link", "f"],
-        ["go back", "H"],
+        ["new tab", "{ctrl+t}"],
+        ["tab left <optional_number>", "{ctrl+pageup}_$1"],
+        ["tab right <optional_number>", "{ctrl+pagedown}_$1"],
+        ["close tab <optional_number>", "{ctrl+w}_$1"],
+        ["go back", "{alt+left}"],
         ["refresh", "{f5}"],
+        ["navigate", "{ctrl+l}"],
+        ["south <optional_number>", "' '_$1"],
+        ["north <optional_number>", "{shift+space}_$1"],
         ["go to hacker news", "navigateTo(http://news.ycombinator.com)"],
         ["go to google news", "navigateTo(http://news.google.com)"],
         ["go to reddit", "navigateTo(http://reddit.com)"],
         ["go to something awful", "navigateTo(http://forums.somethingawful.com)"]
-        
     ],
     "functions": [
         ["navigateTo(url)", "{ctrl+l}$url{enter}"]
