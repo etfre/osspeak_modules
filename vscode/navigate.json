@@ -7,9 +7,9 @@
         ["spaceAround(char)", "spaceBack() $char spaceForward()"]
     ],
     "rules": [
-        ["clipboard", "(cut={ctrl+x} | copy={ctrl+c} | select={})"],
+        ["clipboard", "(cut={ctrl+x} | copy={ctrl+c} | select='')"],
         ["motion", "(until=t | after=f | before=F | retreat=T)"],
-        ["flydirection", "(north=w | west=a | south=s | east=d)"]
+        ["flydirection", "(north=w | west=a | south=s | east=d | first=f | final=l | genesis=z | apocalypse=e)"]
     ],
     "commands": [
         ["<motion> <char> <optional_number>", "flystart() $-1 'f' $1$-2 'c' flyend()"],

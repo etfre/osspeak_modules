@@ -37,7 +37,7 @@
         ],
         ["start terminal", "{ctrl+alt+t}"],
         ["start code", "shell(code)"],
-        ["start chrome", "shell('google-chrome &')"]        
+        ["start chrome", "shell('start chrome')"]        
     ],
     "scope": ""
 }

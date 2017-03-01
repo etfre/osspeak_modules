@@ -10,11 +10,11 @@
         ],
         [
             "operator",
-            "(plus=+ | equals='=' | minus='-' | star='*' | percent='%' | caret='^')"
+            "(plus=+ | equals='=' | minus='-' | star='*' | percent='%' | caret='^' | greater='>' | lesser='<')"
         ],
         [
             "other_char",
-            "(comma=',' | lapping='(' | rapping=')' | space=' ' | flat='_' | double=\" | single=`'` | lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\' | semicolon=';' | colon=':')"
+            "(comma=',' | lapping='(' | rapping=')' | space=' ' | flat='_' | double=\" | single=`'` | backtick='`' | lace='{' | race='}' | lack='[' | rack=']' | period='.' | slash='/' | backslash='\\' | semicolon=';' | colon=':' | pipe='|' | exclamation='!' | (at sign)='@' | (pound sign)='#' | dollar='$' | ampersand='&' | tilda='~')"
         ],
         [
             "optional_number",

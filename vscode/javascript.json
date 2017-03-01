@@ -1,8 +1,20 @@
 {
     "scope": "vscode",
     "rules": [
-        ["jsExport", "export=(spaceBack() export)"],
-        ["jsKeyword", "(<jsExport>)"]
+        ["jsExport", "export=(spaceBack() export spaceForward())"],
+        ["jsImport", "import=(spaceBack() import spaceForward())"],
+        ["jsDefault", "default=(spaceBack() default spaceForward())"],
+        ["jsIf", "if=(if {space} parentheses())"],
+        ["jsElse", "else=(else spaceForward() brackets())"],
+        ["jsAnd", "and=&&"],
+        ["jsOr", "or='||'"],
+        ["jsTrue", "true=true"],
+        ["jsString", "string=(`''`{left})"],
+        ["jsPrint", "print=('console.log()'{left})"],
+        ["jsCall", "call=('()' {left})"],
+        ["jsScope", "scope=(brackets())"],
+        ["jsForRange", "forrange=('for ' parentheses() 'let i = 0; i < ; i++' {left}_5)"],
+        ["jsKeyword", "(<jsExport> | <jsImport> | <jsDefault> | <jsIf> | <jsAnd> | <jsOr> | <jsTrue> | <jsCall> | <jsScope> | <jsPrint> | <jsString> | <jsElse> | <jsForRange>)"]
     ],
     "conditions": {
         "state": "language == 'javascript'"
@@ -13,9 +25,12 @@
             "`function() { }`"
         ],
         [
-            "js <jsKeyword>",
+            "js <jsKeyword>_1-",
             "$1"
         ]
     ],
-    "functions": []
+    "functions": [
+        ["brackets()", "('{}' {left}{enter})"],
+        ["parentheses()", "('()' {left})"]
+    ]
 }

@@ -6,6 +6,7 @@
     },
     "commands": [
         ["parentheses", "`()`"],
+        ["html tag", "`<>`{left}"],
         ["open recent", "{ctrl+r}"],
         ["tab left <optional_number>", "{ctrl+pageup}_$1"],
         ["tab right <optional_number>", "{ctrl+pagedown}_$1"],
