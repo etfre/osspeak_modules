@@ -1,0 +1,18 @@
+{
+    "functions": [
+    ],
+    "rules": [
+    ],
+    "conditions": {
+        "title": "evan@evan-pc"
+    },
+    "commands": [
+        ["npm", "'npm '"],
+        ["install", "'install '"],
+        ["save dev", "'--save-dev '"],
+        ["save local", "'--save '"],
+        ["initialize", "'init -y'"]
+        
+    ],
+    "scope": "bash"
+}

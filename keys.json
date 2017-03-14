@@ -28,10 +28,6 @@
         [
             "space <optional_number>",
             "{' '}_$1"
-        ],
-        [
-            "score <_dictate>",
-            "`Got dictation: ` $1"
         ]
     ],
     "functions": []

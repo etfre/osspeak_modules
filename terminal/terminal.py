@@ -7,7 +7,8 @@ def drop():
     num = osspeak_queue.get(block=True)
     num = int(num)
     _, temp_name = tempfile.mkstemp()
-    results = type_line([f'ls > {temp_name}', ['enter']])
+    read_name = '/mnt/c' + temp_name.replace('\\', '/')[2:]
+    results = type_line([f'ls > {read_name}', ['enter']])
     time.sleep(.5)
     try:
         with open(temp_name) as f:

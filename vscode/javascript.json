@@ -3,6 +3,8 @@
     "rules": [
         ["jsExport", "export=(spaceBack() export spaceForward())"],
         ["jsImport", "import=(spaceBack() import spaceForward())"],
+        ["jsLet", "let=(let spaceForward())"],
+        ["jsConst", "const=(const spaceForward())"],
         ["jsDefault", "default=(spaceBack() default spaceForward())"],
         ["jsIf", "if=(if {space} parentheses())"],
         ["jsElse", "else=(else spaceForward() brackets())"],
@@ -14,7 +16,8 @@
         ["jsCall", "call=('()' {left})"],
         ["jsScope", "scope=(brackets())"],
         ["jsForRange", "forrange=('for ' parentheses() 'let i = 0; i < ; i++' {left}_5)"],
-        ["jsKeyword", "(<jsExport> | <jsImport> | <jsDefault> | <jsIf> | <jsAnd> | <jsOr> | <jsTrue> | <jsCall> | <jsScope> | <jsPrint> | <jsString> | <jsElse> | <jsForRange>)"]
+        ["jsForOf", "forof=('for ' parentheses() 'let  of ' clipboard.get() {left}_length(clipboard.get()) {left}_4)"],
+        ["jsKeyword", "(<jsLet> | <jsConst> | <jsForOf> | <jsExport> | <jsImport> | <jsDefault> | <jsIf> | <jsAnd> | <jsOr> | <jsTrue> | <jsCall> | <jsScope> | <jsPrint> | <jsString> | <jsElse> | <jsForRange>)"]
     ],
     "conditions": {
         "state": "language == 'javascript'"

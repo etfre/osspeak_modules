@@ -1,5 +1,5 @@
 {
-    "scope": "chrome",
+    "scope": "",
     "conditions": {
         "title": "Vimperator"
     },

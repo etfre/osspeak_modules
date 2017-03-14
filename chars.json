@@ -10,7 +10,7 @@
         ],
         [
             "operator",
-            "(plus=+ | equals='=' | minus='-' | star='*' | percent='%' | caret='^' | greater='>' | lesser='<')"
+            "(plus=+ | equals='=' | minus='-' | times='*' | percent='%' | caret='^' | greater='>' | lesser='<')"
         ],
         [
             "other_char",

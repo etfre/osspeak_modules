@@ -24,7 +24,10 @@
         ["remove directory", "'rm -rf '"],
         ["remove file", "'rm  '"],
         ["touch", "'touch '"],
-        ["touch git ignore", "'touch .gitignore'{enter}"]
+        ["touch git ignore", "'touch .gitignore'{enter}"],
+        ["go to modules", "'cd /mnt/c/Users/evan/modules'{enter}"],
+        ["go to rpg", "'cd C:/Users/evan/modules/rpg'{enter}"],
+        ["rm minus rf", "'rm -rf '"]
         
     ],
     "scope": ""
