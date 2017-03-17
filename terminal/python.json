@@ -1,0 +1,18 @@
+{
+    "functions": [
+        ["venvActivate()", "'source bin/activate'{enter}"]
+    ],
+    "rules": [
+    ],
+    "conditions": {
+        "title": "evan@evan-pc"
+    },
+    "commands": [
+        ["virtual activate", "venvActivate()"],
+        ["virtual deactivate", "deactivate{enter}"],
+        ["django run server", "'python manage.py runserver'{enter}"],
+        ["django start app", "'python manage.py startapp '"]
+        
+    ],
+    "scope": "bash"
+}

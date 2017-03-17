@@ -27,8 +27,8 @@
     "conditions": {},
     "commands": [
         [
-            "open <windows>",
-            "window.focus($1)"
+            "open <windows> <optional_number>",
+            "window.focus($1, $2)"
         ],
         [
             "close window",

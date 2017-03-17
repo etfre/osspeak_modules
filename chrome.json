@@ -11,6 +11,9 @@
         ["close tab <optional_number>", "{ctrl+w}_$1"],
         ["go back", "{alt+left}"],
         ["refresh", "{f5}"],
+        ["toggle devtools", "{f12}"],
+        ["page top", "{home}"],
+        ["page bottom", "{end}"],
         ["navigate", "{ctrl+l}"],
         ["south <optional_number>", "{pagedown}_$1"],
         ["north <optional_number>", "{pageup}_$1"],
@@ -18,9 +21,10 @@
         ["go to google news", "navigateTo(http://news.google.com)"],
         ["go to reddit", "navigateTo(http://reddit.com)"],
         ["go to something awful", "navigateTo(http://forums.somethingawful.com)"],
+        ["go to local dev", "navigateTo('http://localhost:8000')"],
         ["silverback gorilla", "7_3"]
     ],
     "functions": [
-        ["navigateTo(url)", "{ctrl+l}wait(1)$url{enter}"]
+        ["navigateTo(url)", "{ctrl+l}wait(.2)$url wait(.2){enter}"]
     ]
 }
