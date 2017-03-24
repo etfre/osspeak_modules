@@ -11,6 +11,10 @@
             "chrome='Google Chrome'"
         ],
         [
+            "pillars",
+            "pillars='Pillars of Eternity'"
+        ],
+        [
             "code",
             "code='Visual Studio Code'"
         ],
@@ -21,7 +25,7 @@
         ["terminal", "terminal='Terminal of Evan'"],
         [
             "windows",
-            "(<chrome> | <code> | <terminal> | <bash>)"
+            "(<chrome> | <pillars> | <code> | <terminal> | <bash>)"
         ]
     ],
     "conditions": {},

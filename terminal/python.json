@@ -8,6 +8,11 @@
         "title": "evan@evan-pc"
     },
     "commands": [
+        ["virtual create", "'python3 -m venv '"],
+        ["pip install", "'pip install '"],
+        ["pip freeze", "'pip freeze > requirements.txt' {enter}"],
+        ["pip requirements install", "'pip install -r requirements.txt' {enter}"],
+
         ["virtual activate", "venvActivate()"],
         ["virtual deactivate", "deactivate{enter}"],
         ["django run server", "'python manage.py runserver'{enter}"],

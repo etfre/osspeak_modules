@@ -45,7 +45,7 @@
         ],
         [
             "grow <letter> <optional_number>",
-            "upper($-2_$-1)"
+            "text.upper($-2_$-1)"
         ],
         [
             "number <digit>_1-",

@@ -21,8 +21,8 @@
         ["py if", "`if :` {left}"], 
         ["py else if", "`elif :` {left}"], 
         ["py else", "`else:` {enter}"], 
-        ["for iterable", "`for  in `clipboard.get(): {left}_length(clipboard.get()) {left}_5"],
-        ["for enumerate", "`for i,  in enumerate(` clipboard.get() `):` {left}_length(clipboard.get()) {left}_16"]
+        ["for iterable", "`for  in `clipboard.get(): {left}_text.length(clipboard.get()) {left}_5"],
+        ["for enumerate", "`for i,  in enumerate(` clipboard.get() `):` {left}_text.length(clipboard.get()) {left}_16"]
     ],
     "functions": []
 }

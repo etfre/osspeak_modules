@@ -1,0 +1,18 @@
+{
+    "scope": "poe",
+    "rules": [],
+    "conditions": {
+        "title": ""
+    },
+    "commands": [
+        ["location", "print(mouse.x(), mouse.y())"],
+        ["center mouse", "mouseMove(list(100, 200))"],
+        ["north <digit>_1-", "mouse.move(0, eval(`$1 * -1`), 1)"],
+        ["east <digit>_1-", "mouse.move($1, 0, 1)"],
+        ["south <digit>_1-", "mouse.move(0, $1, 1)"],
+        ["west <digit>_1-", "mouse.move(eval(`$1 * -1`), 0, 1)"]
+    ],
+    "functions": [
+        ["mouseMove(pos)", "mouse.move($pos[0])"]
+    ]
+}
