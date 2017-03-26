@@ -7,7 +7,7 @@
     "commands": [
         [
             "snipe <optional_number>",
-            "{back}_$1"
+            "repeat({back}, $1)"
         ],
         [
             "escape <optional_number>",

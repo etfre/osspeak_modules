@@ -14,32 +14,24 @@
     },
     "commands": [
         [
-            "<direction> <digit>_0-",
-            "{$1}_$2"
-        ],
-        [
             "fuzzy",
             "{ctrl+p}"
         ],
         ["save", "{ctrl+s}"],
         ["new file", "{ctrl+alt+n}wait(.2){right}"],
-        ["select line <optional_number>", "{ctrl+i}_$1"],
-        ["flip north <optional_number>", "{alt+up}_$1"],
-        ["flip south <optional_number>", "{alt+down}_$1"],
-        ["duplicate north <optional_number>", "{shift+alt+up}_$1"],
-        ["duplicate south <optional_number>", "{shift+alt+down}_$1"],
+        ["select line <optional_number>", "repeat({ctrl+i}, $1)"],
         ["line <digit>_1-", "{ctrl+g}$1{enter}"],
-        ["undo <digit>_0-", "{ctrl+z}_$1"],
-        ["redo <digit>_0-", "{ctrl+y}_$1"],
-        ["smart grow <digit>_0-", "{shift+alt+right}_$1"],
-        ["smart shrink <digit>_0-", "{shift+alt+left}_$1"],
-        ["flip (north=up | south=down)", "{alt+$1}"],
+        ["undo <digit>_0-", "repeat({ctrl+z}, $1)"],
+        ["redo <digit>_0-", "repeat({ctrl+y}, $1)"],
+        ["smart (grow=right | shrink=left) <optional_number>", "repeat({shift+alt+$1}, $2)"],
+        ["flip (north=up | south=down) <optional_number>", "repeat({alt+$1}, $2)"],
+        ["duplicate (north=up | south=down) <optional_number>", "repeat({shift+alt+$1}, $2)"],
         ["search <letter>", "{ctrl+f}$1{enter}"],
-        ["indent <optional_number>", "{ctrl+']'}_$1"],
-        ["outdent <optional_number>", "{ctrl+'['}_$1"],
+        ["indent <optional_number>", "repeat({ctrl+']'}, $1)"],
+        ["outdent <optional_number>", "repeat({ctrl+'['}, $1)"],
         ["new line", "{ctrl+enter}"],
         ["new line above", "{ctrl+shift+enter}"],
-        ["multi cursor <optional_number>", "{ctrl+d}_$1"],
+        ["multi cursor <optional_number>", "repeat({ctrl+d}, $1)"],
         ["waffle house", "{shift+left}"]
     ],
     "scope": "vscode"

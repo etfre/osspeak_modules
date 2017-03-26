@@ -22,8 +22,8 @@
         ["jsPrint", "print=('console.log()'{left})"],
         ["jsCall", "call=('()' {left})"],
         ["jsScope", "scope=(brackets())"],
-        ["jsForRange", "forrange=('for ' parentheses() 'let i = 0; i < ; i++' {left}_5)"],
-        ["jsForOf", "forof=('for ' parentheses() 'let  of ' clipboard.get() {left}_text.length(clipboard.get()) {left}_4)"],
+        ["jsForRange", "forrange=('for ' parentheses() 'let i = 0; i < ; i++' repeat({left}, 5))"],
+        ["jsForOf", "forof=('for ' parentheses() 'let  of ' clipboard.get() repeat({left}, text.length(clipboard.get())) repeat({left}, 4))"],
         ["jsKeyword", "(<jsNull> | <jsUndefined> | <jsLet> | <jsBreak> | <jsContinue> | <jsReturn> | <jsNew> | <jsThis> | <jsConst> | <jsForOf> | <jsExport> | <jsImport> | <jsDefault> | <jsIf> | <jsAnd> | <jsOr> | <jsTrue> | <jsCall> | <jsScope> | <jsPrint> | <jsString> | <jsElse> | <jsForRange>)"]
     ],
     "conditions": {

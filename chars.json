@@ -33,7 +33,7 @@
     "commands": [
         [
             "<arrow> <optional_number>",
-            "{$1}_$2"
+            "repeat({$1}, $2)"
         ],
         [
             "(hello world|goodbye universe)_2-",
@@ -41,11 +41,11 @@
         ],
         [
             "(<letter> | <other_char>) <optional_number>",
-            "$-2_$-1"
+            "repeat($-2, $-1)"
         ],
         [
             "grow <letter> <optional_number>",
-            "text.upper($-2_$-1)"
+            "text.upper(repeat($-2, $-1))"
         ],
         [
             "number <digit>_1-",
