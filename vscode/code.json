@@ -22,6 +22,7 @@
             "{ctrl+p}"
         ],
         ["save", "{ctrl+s}"],
+        ["new file", "{ctrl+alt+n}wait(.2){right}"],
         ["select line <optional_number>", "{ctrl+i}_$1"],
         ["flip north <optional_number>", "{alt+up}_$1"],
         ["flip south <optional_number>", "{alt+down}_$1"],

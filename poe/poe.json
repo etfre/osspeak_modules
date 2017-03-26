@@ -2,7 +2,7 @@
     "scope": "poe",
     "rules": [],
     "conditions": {
-        "title": ""
+        "title": "Pillars of Eternity"
     },
     "commands": [
         ["location", "print(mouse.x(), mouse.y())"],
