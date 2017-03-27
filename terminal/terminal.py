@@ -3,8 +3,7 @@ import time
 import os
 import tempfile
 
-def drop():
-    num = osspeak_queue.get(block=True)
+def drop(num):
     num = int(num)
     _, temp_name = tempfile.mkstemp()
     read_name = '/mnt/c' + temp_name.replace('\\', '/')[2:]
@@ -20,5 +19,3 @@ def drop():
     finally:
         if os.path.isfile(temp_name):
             os.remove(temp_name)
-
-drop()

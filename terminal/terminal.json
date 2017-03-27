@@ -9,14 +9,14 @@
     "commands": [
         [
             "climb <optional_number>",
-            "'cd ' '../'_$1 {enter}"
+            "'cd ' repeat('../', $1) {enter}"
         ],
         [
             "list files",
             "'ls | cat -n'{enter}"
         ],
-        ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal) extensions.message(osspeak_modules.terminal.terminal, $1)"],
-        ["tab (left=pageup | right=pagedown) <optional_number>", "{ctrl+$1}_$2"],
+        ["drop <digit>_1-", "extensions.run(osspeak_modules.terminal.terminal, term) extensions.call(term, drop, $1)"],
+        ["tab (left=pageup | right=pagedown) <optional_number>", "repeat({ctrl+$1}, $2)"],
         ["new tab", "{ctrl+shift+t}"],
         ["close tab", "{ctrl+shift+w}"],
         ["make dir", "'mkdir '"],

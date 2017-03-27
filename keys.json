@@ -11,23 +11,23 @@
         ],
         [
             "escape <optional_number>",
-            "{esc}_$1"
+            "repeat({esc}, $1)"
         ],
         [
             "press tab <optional_number>",
-            "{tab}_$1"
+            "repeat({tab}, $1)"
         ],
         [
             "delete <optional_number>",
-            "{del}_$1"
+            "repeat({del}, $1)"
         ],
         [
             "enter <optional_number>",
-            "{enter}_$1"
+            "repeat({enter}, $1)"
         ],
         [
             "space <optional_number>",
-            "{' '}_$1"
+            "repeat({' '}, $1)"
         ]
     ],
     "functions": []
