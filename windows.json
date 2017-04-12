@@ -19,13 +19,17 @@
             "code='Visual Studio Code'"
         ],
         [
+            "media",
+            "media='vlc media player'"
+        ],
+        [
             "bash",
             "bash='evan@EVAN-PC'"
         ],
         ["terminal", "terminal='Terminal of Evan'"],
         [
             "windows",
-            "(<chrome> | <pillars> | <code> | <terminal> | <bash>)"
+            "(<chrome> | <pillars> | <code> | <terminal> | <bash> | <media>)"
         ]
     ],
     "conditions": {},
