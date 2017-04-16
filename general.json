@@ -1,6 +1,8 @@
 {
     "scope": "",
-    "rules": [],
+    "rules": [
+        ["key", "(control=ctrl | alt=alt)"]
+    ],
     "conditions": {
     },
     "commands": [

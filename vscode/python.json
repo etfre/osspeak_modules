@@ -9,7 +9,14 @@
             "new function",
             "`def ():` repeat({left}, 3)"
         ],
+        [
+            "new method",
+            "`def (self):` repeat({left}, 7)"
+        ],
         ["py import", "import spaceForward()"],
+        ["py dunder", "'____' repeat({left}, 2)"],
+        ["py from", "from spaceForward()"],
+        ["py self", "self"],
         ["py return", "return spaceForward()"],
         ["py class", "'class :'{left}"],
         ["py yield", "yield spaceForward()"],

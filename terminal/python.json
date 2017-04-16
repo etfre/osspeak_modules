@@ -16,7 +16,10 @@
         ["virtual activate", "venvActivate()"],
         ["virtual deactivate", "deactivate{enter}"],
         ["django run server", "'python manage.py runserver'{enter}"],
-        ["django start app", "'python manage.py startapp '"]
+        ["django start app", "'python manage.py startapp '"],
+        ["django migrate", "'python manage.py migrate' {enter}"],
+        ["django make migrations", "'python manage.py makemigrations' {enter}"],
+        ["django manage", "'python manage.py '"]
         
     ],
     "scope": "bash"
